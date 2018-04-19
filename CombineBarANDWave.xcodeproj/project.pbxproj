@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F599D8BE2088A8120023610A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D8BD2088A8120023610A /* AppDelegate.m */; };
+		F599D8C12088A8120023610A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D8C02088A8120023610A /* ViewController.m */; };
+		F599D8C42088A8120023610A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F599D8C22088A8120023610A /* Main.storyboard */; };
+		F599D8C62088A8120023610A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F599D8C52088A8120023610A /* Assets.xcassets */; };
+		F599D8C92088A8120023610A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F599D8C72088A8120023610A /* LaunchScreen.storyboard */; };
+		F599D8CC2088A8120023610A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D8CB2088A8120023610A /* main.m */; };
+		F599D8D62088A8120023610A /* CombineBarANDWaveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D8D52088A8120023610A /* CombineBarANDWaveTests.m */; };
+		F599D8E12088A8120023610A /* CombineBarANDWaveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D8E02088A8120023610A /* CombineBarANDWaveUITests.m */; };
+		F599D9692088A8720023610A /* ZFGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D9382088A8720023610A /* ZFGenericChart.m */; };
+		F599D96A2088A8720023610A /* ZFBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D93C2088A8720023610A /* ZFBarChart.m */; };
+		F599D96B2088A8720023610A /* ZFBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D93D2088A8720023610A /* ZFBar.m */; };
+		F599D96C2088A8720023610A /* UIView+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D93F2088A8720023610A /* UIView+Zirkfied.m */; };
+		F599D96D2088A8720023610A /* UIBezierPath+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D9412088A8720023610A /* UIBezierPath+Zirkfied.m */; };
+		F599D96E2088A8720023610A /* UIColor+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D9452088A8720023610A /* UIColor+Zirkfied.m */; };
+		F599D96F2088A8720023610A /* NSString+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D9472088A8720023610A /* NSString+Zirkfied.m */; };
+		F599D9702088A8720023610A /* NSNumber+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D9482088A8720023610A /* NSNumber+Zirkfied.m */; };
+		F599D9712088A8720023610A /* ZFHorizontalAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D94A2088A8720023610A /* ZFHorizontalAxis.m */; };
+		F599D9722088A8720023610A /* ZFConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D94E2088A8720023610A /* ZFConst.m */; };
+		F599D9732088A8720023610A /* ZFMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D9522088A8720023610A /* ZFMethod.m */; };
+		F599D9742088A8720023610A /* ZFXAxisLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D9552088A8720023610A /* ZFXAxisLine.m */; };
+		F599D9752088A8720023610A /* ZFYAxisLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D9562088A8720023610A /* ZFYAxisLine.m */; };
+		F599D9762088A8720023610A /* ZFPopoverLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D9582088A8720023610A /* ZFPopoverLabel.m */; };
+		F599D9772088A8720023610A /* ZFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D95A2088A8720023610A /* ZFLabel.m */; };
+		F599D9782088A8720023610A /* ZFGenericAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D95E2088A8720023610A /* ZFGenericAxis.m */; };
+		F599D9792088A8720023610A /* ZFGradientAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D9622088A8720023610A /* ZFGradientAttribute.m */; };
+		F599D97A2088A8720023610A /* ZFCurveAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D9632088A8720023610A /* ZFCurveAttribute.m */; };
+		F599D97B2088A8720023610A /* ZFWaveChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D9672088A8720023610A /* ZFWaveChart.m */; };
+		F599D97C2088A8720023610A /* ZFWave.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D9682088A8720023610A /* ZFWave.m */; };
+		F599D97F2088A8AB0023610A /* MLBarWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = F599D97E2088A8AB0023610A /* MLBarWaveView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F599D8D22088A8120023610A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F599D8B12088A8120023610A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F599D8B82088A8120023610A;
+			remoteInfo = CombineBarANDWave;
+		};
+		F599D8DD2088A8120023610A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F599D8B12088A8120023610A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F599D8B82088A8120023610A;
+			remoteInfo = CombineBarANDWave;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F599D8B92088A8120023610A /* CombineBarANDWave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineBarANDWave.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F599D8BC2088A8120023610A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F599D8BD2088A8120023610A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F599D8BF2088A8120023610A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F599D8C02088A8120023610A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F599D8C32088A8120023610A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F599D8C52088A8120023610A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F599D8C82088A8120023610A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F599D8CA2088A8120023610A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F599D8CB2088A8120023610A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F599D8D12088A8120023610A /* CombineBarANDWaveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineBarANDWaveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F599D8D52088A8120023610A /* CombineBarANDWaveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombineBarANDWaveTests.m; sourceTree = "<group>"; };
+		F599D8D72088A8120023610A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F599D8DC2088A8120023610A /* CombineBarANDWaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineBarANDWaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F599D8E02088A8120023610A /* CombineBarANDWaveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombineBarANDWaveUITests.m; sourceTree = "<group>"; };
+		F599D8E22088A8120023610A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F599D9372088A8720023610A /* ZFGenericChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFGenericChart.h; sourceTree = "<group>"; };
+		F599D9382088A8720023610A /* ZFGenericChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFGenericChart.m; sourceTree = "<group>"; };
+		F599D93A2088A8720023610A /* ZFBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBarChart.h; sourceTree = "<group>"; };
+		F599D93B2088A8720023610A /* ZFBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBar.h; sourceTree = "<group>"; };
+		F599D93C2088A8720023610A /* ZFBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBarChart.m; sourceTree = "<group>"; };
+		F599D93D2088A8720023610A /* ZFBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBar.m; sourceTree = "<group>"; };
+		F599D93F2088A8720023610A /* UIView+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Zirkfied.m"; sourceTree = "<group>"; };
+		F599D9402088A8720023610A /* UIColor+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Zirkfied.h"; sourceTree = "<group>"; };
+		F599D9412088A8720023610A /* UIBezierPath+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Zirkfied.m"; sourceTree = "<group>"; };
+		F599D9422088A8720023610A /* NSString+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Zirkfied.h"; sourceTree = "<group>"; };
+		F599D9432088A8720023610A /* NSNumber+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Zirkfied.h"; sourceTree = "<group>"; };
+		F599D9442088A8720023610A /* UIView+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Zirkfied.h"; sourceTree = "<group>"; };
+		F599D9452088A8720023610A /* UIColor+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Zirkfied.m"; sourceTree = "<group>"; };
+		F599D9462088A8720023610A /* UIBezierPath+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Zirkfied.h"; sourceTree = "<group>"; };
+		F599D9472088A8720023610A /* NSString+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Zirkfied.m"; sourceTree = "<group>"; };
+		F599D9482088A8720023610A /* NSNumber+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Zirkfied.m"; sourceTree = "<group>"; };
+		F599D94A2088A8720023610A /* ZFHorizontalAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFHorizontalAxis.m; sourceTree = "<group>"; };
+		F599D94B2088A8720023610A /* ZFHorizontalAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFHorizontalAxis.h; sourceTree = "<group>"; };
+		F599D94D2088A8720023610A /* ZFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFColor.h; sourceTree = "<group>"; };
+		F599D94E2088A8720023610A /* ZFConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFConst.m; sourceTree = "<group>"; };
+		F599D94F2088A8720023610A /* ZFChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFChart.h; sourceTree = "<group>"; };
+		F599D9502088A8720023610A /* ZFMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMethod.h; sourceTree = "<group>"; };
+		F599D9512088A8720023610A /* ZFConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFConst.h; sourceTree = "<group>"; };
+		F599D9522088A8720023610A /* ZFMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMethod.m; sourceTree = "<group>"; };
+		F599D9542088A8720023610A /* ZFPopoverLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPopoverLabel.h; sourceTree = "<group>"; };
+		F599D9552088A8720023610A /* ZFXAxisLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFXAxisLine.m; sourceTree = "<group>"; };
+		F599D9562088A8720023610A /* ZFYAxisLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFYAxisLine.m; sourceTree = "<group>"; };
+		F599D9572088A8720023610A /* ZFLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLabel.h; sourceTree = "<group>"; };
+		F599D9582088A8720023610A /* ZFPopoverLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPopoverLabel.m; sourceTree = "<group>"; };
+		F599D9592088A8720023610A /* ZFXAxisLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFXAxisLine.h; sourceTree = "<group>"; };
+		F599D95A2088A8720023610A /* ZFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFLabel.m; sourceTree = "<group>"; };
+		F599D95B2088A8720023610A /* ZFYAxisLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFYAxisLine.h; sourceTree = "<group>"; };
+		F599D95D2088A8720023610A /* ZFGenericAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFGenericAxis.h; sourceTree = "<group>"; };
+		F599D95E2088A8720023610A /* ZFGenericAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFGenericAxis.m; sourceTree = "<group>"; };
+		F599D9602088A8720023610A /* ZFGradientAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFGradientAttribute.h; sourceTree = "<group>"; };
+		F599D9612088A8720023610A /* ZFCurveAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFCurveAttribute.h; sourceTree = "<group>"; };
+		F599D9622088A8720023610A /* ZFGradientAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFGradientAttribute.m; sourceTree = "<group>"; };
+		F599D9632088A8720023610A /* ZFCurveAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFCurveAttribute.m; sourceTree = "<group>"; };
+		F599D9652088A8720023610A /* ZFWaveChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFWaveChart.h; sourceTree = "<group>"; };
+		F599D9662088A8720023610A /* ZFWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFWave.h; sourceTree = "<group>"; };
+		F599D9672088A8720023610A /* ZFWaveChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFWaveChart.m; sourceTree = "<group>"; };
+		F599D9682088A8720023610A /* ZFWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFWave.m; sourceTree = "<group>"; };
+		F599D97D2088A8AB0023610A /* MLBarWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLBarWaveView.h; sourceTree = "<group>"; };
+		F599D97E2088A8AB0023610A /* MLBarWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLBarWaveView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F599D8B62088A8120023610A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F599D8CE2088A8120023610A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F599D8D92088A8120023610A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F599D8B02088A8120023610A = {
+			isa = PBXGroup;
+			children = (
+				F599D8BB2088A8120023610A /* CombineBarANDWave */,
+				F599D8D42088A8120023610A /* CombineBarANDWaveTests */,
+				F599D8DF2088A8120023610A /* CombineBarANDWaveUITests */,
+				F599D8BA2088A8120023610A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F599D8BA2088A8120023610A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F599D8B92088A8120023610A /* CombineBarANDWave.app */,
+				F599D8D12088A8120023610A /* CombineBarANDWaveTests.xctest */,
+				F599D8DC2088A8120023610A /* CombineBarANDWaveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F599D8BB2088A8120023610A /* CombineBarANDWave */ = {
+			isa = PBXGroup;
+			children = (
+				F599D9352088A8720023610A /* ComebineDrawWave */,
+				F599D8BC2088A8120023610A /* AppDelegate.h */,
+				F599D8BD2088A8120023610A /* AppDelegate.m */,
+				F599D8BF2088A8120023610A /* ViewController.h */,
+				F599D8C02088A8120023610A /* ViewController.m */,
+				F599D8C22088A8120023610A /* Main.storyboard */,
+				F599D8C52088A8120023610A /* Assets.xcassets */,
+				F599D8C72088A8120023610A /* LaunchScreen.storyboard */,
+				F599D8CA2088A8120023610A /* Info.plist */,
+				F599D8CB2088A8120023610A /* main.m */,
+			);
+			path = CombineBarANDWave;
+			sourceTree = "<group>";
+		};
+		F599D8D42088A8120023610A /* CombineBarANDWaveTests */ = {
+			isa = PBXGroup;
+			children = (
+				F599D8D52088A8120023610A /* CombineBarANDWaveTests.m */,
+				F599D8D72088A8120023610A /* Info.plist */,
+			);
+			path = CombineBarANDWaveTests;
+			sourceTree = "<group>";
+		};
+		F599D8DF2088A8120023610A /* CombineBarANDWaveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F599D8E02088A8120023610A /* CombineBarANDWaveUITests.m */,
+				F599D8E22088A8120023610A /* Info.plist */,
+			);
+			path = CombineBarANDWaveUITests;
+			sourceTree = "<group>";
+		};
+		F599D9352088A8720023610A /* ComebineDrawWave */ = {
+			isa = PBXGroup;
+			children = (
+				F599D9362088A8720023610A /* ZFGenericChart */,
+				F599D9392088A8720023610A /* ZFBarChart */,
+				F599D93E2088A8720023610A /* Category */,
+				F599D9492088A8720023610A /* ZFHorizontalAxis */,
+				F599D94C2088A8720023610A /* Other */,
+				F599D9532088A8720023610A /* Component */,
+				F599D95C2088A8720023610A /* ZFGenericAxis */,
+				F599D95F2088A8720023610A /* Model */,
+				F599D9642088A8720023610A /* ZFWaveChart */,
+				F599D97D2088A8AB0023610A /* MLBarWaveView.h */,
+				F599D97E2088A8AB0023610A /* MLBarWaveView.m */,
+			);
+			path = ComebineDrawWave;
+			sourceTree = "<group>";
+		};
+		F599D9362088A8720023610A /* ZFGenericChart */ = {
+			isa = PBXGroup;
+			children = (
+				F599D9372088A8720023610A /* ZFGenericChart.h */,
+				F599D9382088A8720023610A /* ZFGenericChart.m */,
+			);
+			path = ZFGenericChart;
+			sourceTree = "<group>";
+		};
+		F599D9392088A8720023610A /* ZFBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				F599D93A2088A8720023610A /* ZFBarChart.h */,
+				F599D93B2088A8720023610A /* ZFBar.h */,
+				F599D93C2088A8720023610A /* ZFBarChart.m */,
+				F599D93D2088A8720023610A /* ZFBar.m */,
+			);
+			path = ZFBarChart;
+			sourceTree = "<group>";
+		};
+		F599D93E2088A8720023610A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F599D93F2088A8720023610A /* UIView+Zirkfied.m */,
+				F599D9402088A8720023610A /* UIColor+Zirkfied.h */,
+				F599D9412088A8720023610A /* UIBezierPath+Zirkfied.m */,
+				F599D9422088A8720023610A /* NSString+Zirkfied.h */,
+				F599D9432088A8720023610A /* NSNumber+Zirkfied.h */,
+				F599D9442088A8720023610A /* UIView+Zirkfied.h */,
+				F599D9452088A8720023610A /* UIColor+Zirkfied.m */,
+				F599D9462088A8720023610A /* UIBezierPath+Zirkfied.h */,
+				F599D9472088A8720023610A /* NSString+Zirkfied.m */,
+				F599D9482088A8720023610A /* NSNumber+Zirkfied.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F599D9492088A8720023610A /* ZFHorizontalAxis */ = {
+			isa = PBXGroup;
+			children = (
+				F599D94A2088A8720023610A /* ZFHorizontalAxis.m */,
+				F599D94B2088A8720023610A /* ZFHorizontalAxis.h */,
+			);
+			path = ZFHorizontalAxis;
+			sourceTree = "<group>";
+		};
+		F599D94C2088A8720023610A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F599D94D2088A8720023610A /* ZFColor.h */,
+				F599D94E2088A8720023610A /* ZFConst.m */,
+				F599D94F2088A8720023610A /* ZFChart.h */,
+				F599D9502088A8720023610A /* ZFMethod.h */,
+				F599D9512088A8720023610A /* ZFConst.h */,
+				F599D9522088A8720023610A /* ZFMethod.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F599D9532088A8720023610A /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F599D9542088A8720023610A /* ZFPopoverLabel.h */,
+				F599D9552088A8720023610A /* ZFXAxisLine.m */,
+				F599D9562088A8720023610A /* ZFYAxisLine.m */,
+				F599D9572088A8720023610A /* ZFLabel.h */,
+				F599D9582088A8720023610A /* ZFPopoverLabel.m */,
+				F599D9592088A8720023610A /* ZFXAxisLine.h */,
+				F599D95A2088A8720023610A /* ZFLabel.m */,
+				F599D95B2088A8720023610A /* ZFYAxisLine.h */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		F599D95C2088A8720023610A /* ZFGenericAxis */ = {
+			isa = PBXGroup;
+			children = (
+				F599D95D2088A8720023610A /* ZFGenericAxis.h */,
+				F599D95E2088A8720023610A /* ZFGenericAxis.m */,
+			);
+			path = ZFGenericAxis;
+			sourceTree = "<group>";
+		};
+		F599D95F2088A8720023610A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F599D9602088A8720023610A /* ZFGradientAttribute.h */,
+				F599D9612088A8720023610A /* ZFCurveAttribute.h */,
+				F599D9622088A8720023610A /* ZFGradientAttribute.m */,
+				F599D9632088A8720023610A /* ZFCurveAttribute.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F599D9642088A8720023610A /* ZFWaveChart */ = {
+			isa = PBXGroup;
+			children = (
+				F599D9652088A8720023610A /* ZFWaveChart.h */,
+				F599D9662088A8720023610A /* ZFWave.h */,
+				F599D9672088A8720023610A /* ZFWaveChart.m */,
+				F599D9682088A8720023610A /* ZFWave.m */,
+			);
+			path = ZFWaveChart;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F599D8B82088A8120023610A /* CombineBarANDWave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F599D8E52088A8120023610A /* Build configuration list for PBXNativeTarget "CombineBarANDWave" */;
+			buildPhases = (
+				F599D8B52088A8120023610A /* Sources */,
+				F599D8B62088A8120023610A /* Frameworks */,
+				F599D8B72088A8120023610A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CombineBarANDWave;
+			productName = CombineBarANDWave;
+			productReference = F599D8B92088A8120023610A /* CombineBarANDWave.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F599D8D02088A8120023610A /* CombineBarANDWaveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F599D8E82088A8120023610A /* Build configuration list for PBXNativeTarget "CombineBarANDWaveTests" */;
+			buildPhases = (
+				F599D8CD2088A8120023610A /* Sources */,
+				F599D8CE2088A8120023610A /* Frameworks */,
+				F599D8CF2088A8120023610A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F599D8D32088A8120023610A /* PBXTargetDependency */,
+			);
+			name = CombineBarANDWaveTests;
+			productName = CombineBarANDWaveTests;
+			productReference = F599D8D12088A8120023610A /* CombineBarANDWaveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F599D8DB2088A8120023610A /* CombineBarANDWaveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F599D8EB2088A8120023610A /* Build configuration list for PBXNativeTarget "CombineBarANDWaveUITests" */;
+			buildPhases = (
+				F599D8D82088A8120023610A /* Sources */,
+				F599D8D92088A8120023610A /* Frameworks */,
+				F599D8DA2088A8120023610A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F599D8DE2088A8120023610A /* PBXTargetDependency */,
+			);
+			name = CombineBarANDWaveUITests;
+			productName = CombineBarANDWaveUITests;
+			productReference = F599D8DC2088A8120023610A /* CombineBarANDWaveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F599D8B12088A8120023610A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Maple;
+				TargetAttributes = {
+					F599D8B82088A8120023610A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F599D8D02088A8120023610A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F599D8B82088A8120023610A;
+					};
+					F599D8DB2088A8120023610A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F599D8B82088A8120023610A;
+					};
+				};
+			};
+			buildConfigurationList = F599D8B42088A8120023610A /* Build configuration list for PBXProject "CombineBarANDWave" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F599D8B02088A8120023610A;
+			productRefGroup = F599D8BA2088A8120023610A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F599D8B82088A8120023610A /* CombineBarANDWave */,
+				F599D8D02088A8120023610A /* CombineBarANDWaveTests */,
+				F599D8DB2088A8120023610A /* CombineBarANDWaveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F599D8B72088A8120023610A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F599D8C92088A8120023610A /* LaunchScreen.storyboard in Resources */,
+				F599D8C62088A8120023610A /* Assets.xcassets in Resources */,
+				F599D8C42088A8120023610A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F599D8CF2088A8120023610A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F599D8DA2088A8120023610A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F599D8B52088A8120023610A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F599D9732088A8720023610A /* ZFMethod.m in Sources */,
+				F599D9712088A8720023610A /* ZFHorizontalAxis.m in Sources */,
+				F599D96E2088A8720023610A /* UIColor+Zirkfied.m in Sources */,
+				F599D96F2088A8720023610A /* NSString+Zirkfied.m in Sources */,
+				F599D9782088A8720023610A /* ZFGenericAxis.m in Sources */,
+				F599D96A2088A8720023610A /* ZFBarChart.m in Sources */,
+				F599D96D2088A8720023610A /* UIBezierPath+Zirkfied.m in Sources */,
+				F599D9722088A8720023610A /* ZFConst.m in Sources */,
+				F599D8C12088A8120023610A /* ViewController.m in Sources */,
+				F599D97B2088A8720023610A /* ZFWaveChart.m in Sources */,
+				F599D8CC2088A8120023610A /* main.m in Sources */,
+				F599D9792088A8720023610A /* ZFGradientAttribute.m in Sources */,
+				F599D9742088A8720023610A /* ZFXAxisLine.m in Sources */,
+				F599D96B2088A8720023610A /* ZFBar.m in Sources */,
+				F599D97C2088A8720023610A /* ZFWave.m in Sources */,
+				F599D9702088A8720023610A /* NSNumber+Zirkfied.m in Sources */,
+				F599D9772088A8720023610A /* ZFLabel.m in Sources */,
+				F599D9692088A8720023610A /* ZFGenericChart.m in Sources */,
+				F599D96C2088A8720023610A /* UIView+Zirkfied.m in Sources */,
+				F599D97A2088A8720023610A /* ZFCurveAttribute.m in Sources */,
+				F599D9752088A8720023610A /* ZFYAxisLine.m in Sources */,
+				F599D8BE2088A8120023610A /* AppDelegate.m in Sources */,
+				F599D97F2088A8AB0023610A /* MLBarWaveView.m in Sources */,
+				F599D9762088A8720023610A /* ZFPopoverLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F599D8CD2088A8120023610A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F599D8D62088A8120023610A /* CombineBarANDWaveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F599D8D82088A8120023610A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F599D8E12088A8120023610A /* CombineBarANDWaveUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F599D8D32088A8120023610A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F599D8B82088A8120023610A /* CombineBarANDWave */;
+			targetProxy = F599D8D22088A8120023610A /* PBXContainerItemProxy */;
+		};
+		F599D8DE2088A8120023610A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F599D8B82088A8120023610A /* CombineBarANDWave */;
+			targetProxy = F599D8DD2088A8120023610A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F599D8C22088A8120023610A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F599D8C32088A8120023610A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F599D8C72088A8120023610A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F599D8C82088A8120023610A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F599D8E32088A8120023610A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F599D8E42088A8120023610A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F599D8E62088A8120023610A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7F7GRCFUG;
+				INFOPLIST_FILE = CombineBarANDWave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huidragon.www.CombineBarANDWave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F599D8E72088A8120023610A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7F7GRCFUG;
+				INFOPLIST_FILE = CombineBarANDWave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huidragon.www.CombineBarANDWave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F599D8E92088A8120023610A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7F7GRCFUG;
+				INFOPLIST_FILE = CombineBarANDWaveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huidragon.www.CombineBarANDWaveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CombineBarANDWave.app/CombineBarANDWave";
+			};
+			name = Debug;
+		};
+		F599D8EA2088A8120023610A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7F7GRCFUG;
+				INFOPLIST_FILE = CombineBarANDWaveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huidragon.www.CombineBarANDWaveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CombineBarANDWave.app/CombineBarANDWave";
+			};
+			name = Release;
+		};
+		F599D8EC2088A8120023610A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7F7GRCFUG;
+				INFOPLIST_FILE = CombineBarANDWaveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huidragon.www.CombineBarANDWaveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CombineBarANDWave;
+			};
+			name = Debug;
+		};
+		F599D8ED2088A8120023610A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7F7GRCFUG;
+				INFOPLIST_FILE = CombineBarANDWaveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huidragon.www.CombineBarANDWaveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CombineBarANDWave;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F599D8B42088A8120023610A /* Build configuration list for PBXProject "CombineBarANDWave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F599D8E32088A8120023610A /* Debug */,
+				F599D8E42088A8120023610A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F599D8E52088A8120023610A /* Build configuration list for PBXNativeTarget "CombineBarANDWave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F599D8E62088A8120023610A /* Debug */,
+				F599D8E72088A8120023610A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F599D8E82088A8120023610A /* Build configuration list for PBXNativeTarget "CombineBarANDWaveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F599D8E92088A8120023610A /* Debug */,
+				F599D8EA2088A8120023610A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F599D8EB2088A8120023610A /* Build configuration list for PBXNativeTarget "CombineBarANDWaveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F599D8EC2088A8120023610A /* Debug */,
+				F599D8ED2088A8120023610A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F599D8B12088A8120023610A /* Project object */;
+}
